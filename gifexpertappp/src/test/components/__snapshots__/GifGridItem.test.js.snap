@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas del Componente <GifgridItems> Prueba de Mostar Correctamente GifGridItems 1`] = `
+<div
+  className="card animate__animated animate__backInRight"
+>
+  <img
+    alt="Un titulo"
+    src="https://loclahosts.com/"
+  />
+  <p
+    className="title"
+  >
+    Un titulo
+  </p>
+</div>
+`;

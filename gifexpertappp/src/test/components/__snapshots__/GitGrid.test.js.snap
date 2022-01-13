@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <GifGrid/> Componente haga Match con el SnapShot  1`] = `
+<Fragment>
+  <h2>
+    One Punch
+  </h2>
+  <p
+    className="animate__animated animate__bounceIn"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas al componente <GifGrid/> Debe mostar items cuando se carga  imagenes usefetchs 1`] = `
+<Fragment>
+  <h2>
+    One Punch
+  </h2>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier Titulo para prueba"
+      url="https://localhost/xxxx/"
+    />
+    <GifGridItem
+      id="HDGDG"
+      key="HDGDG"
+      title="Cualquier Titulo2 para prueba"
+      url="https://localhost/"
+    />
+  </div>
+</Fragment>
+`;

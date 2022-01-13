@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Cargar React -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <meta name="description" content="Reacjs" />
+    <meta name="robots" content="index,fallow" />
+    <meta name="X-UA Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria Reacths01</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const divRoot = document.querySelector("#root");
+      console.log(divRoot);
+      const nombre = " Jhon  Jairo Reacjs Devops";
+      const h1Tag = <h1>Hola Soy {nombre}</h1>;
+      ReactDOM.render(h1Tag, divRoot);
+    </script>
+
+    <!-- <div id="output"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+     Your custom script here 
+    <script type="text/babel">
+        const getMessage = () => "Hello World"; document.getElementById("output").innerHTML = getMessage();
+    </script> -->
+  </body>
+</html>
