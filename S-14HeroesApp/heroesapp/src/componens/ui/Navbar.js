@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 
-//Link es un punto de anclaje para ir a otra pantall
+//Link es un punto de anclaje para ir a otra pantalla ancortage a href
 //NavLink se utiliza para que visulamente se pueda ver ahi
-//  y metre las clases
+//  y meter las clases
 //Vresion 6  activeClassName="active" no existe
 
 export const Navbar = () => {
@@ -37,10 +37,20 @@ export const Navbar = () => {
             Marvel
           </NavLink>
 
-          <NavLink className="nav-item nav-link" to="/dc">
+          <NavLink
+            className={({ isActive }) =>
+              "nav-item nav-link mx-2 " + (isActive ? "active" : " ")
+            }
+            to="/dc"
+          >
             DC
           </NavLink>
-          <NavLink className="nav-item nav-link" to="/hero">
+          <NavLink
+            className={({ isActive }) =>
+              "nav-item nav-link mx-2 " + (isActive ? "active" : " ")
+            }
+            to="/hero"
+          >
             Hero
           </NavLink>
           <NavLink

@@ -12,10 +12,10 @@ export const HeroCard = ({
   const imagePath = `Assets/${id}.jpg`;
   return (
     <div className="col">
-      <div className="card my-2">
+      <div className="card my-2 ">
         <div className="row no-gutters">
           <div className="col-4">
-            <img src={imagePath} className="card-img-top" alt={superhero} />
+            <img src={imagePath} className="card-img-top " alt={superhero} />
           </div>
           <div className="col-8">
             <div className="card-body">
@@ -23,7 +23,7 @@ export const HeroCard = ({
               <p>{alter_ego}</p>
               {/* evaluo si el el alter_ego es diferente al atributo characters 
                 esta dondicion semeja un ternario si alter edo es diferente a character
-                que muestre un parrafo
+                que muestre un parrafo- && muestra es igula a un ternario
               */}
               {alter_ego !== characters && (
                 <p className="text-muted">{characters}</p>

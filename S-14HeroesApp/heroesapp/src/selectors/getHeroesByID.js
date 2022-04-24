@@ -5,5 +5,8 @@
 import { heroes } from "../data/heroes";
 
 export const getHeroesById = (id = " ") => {
+  //Pruebas para usar el useMemo
+  console.log("Prueba ByIdHero called");
+
   return heroes.find((heroe) => heroe.id === id);
 };
