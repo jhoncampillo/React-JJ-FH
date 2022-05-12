@@ -24,17 +24,18 @@ export const CounterApp = () => {
   //{counter1: 10, counter2: 20}
   return (
     <>
-      <h1>Counter {counter1}</h1>
-      <h1>Counter {counter2}</h1>
+      <h1>Counter1 {counter2}</h1>
+      <h1>Counter2 {counter1}</h1>
       <hr />
       <button
         className="btn btn-primary mx-3"
-        defaultValue={counter1}
+        defaultValue={counter2}
         onClick={() => {
           setState({
-            //llamo el contenido del state con el peadiperator y lo rescribo
+            //llamo el contenido del state con el spreadoperator y lo rescribo
+            //creo un acopia del estado anterior..
             ...state,
-            counter1: counter1 + 1,
+            counter2: counter2 + 1,
           });
         }}
       >

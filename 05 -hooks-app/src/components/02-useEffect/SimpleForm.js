@@ -18,7 +18,7 @@ export const SimpleForm = () => {
   useEffect(() => {
     console.log("hey!");
   }, []);
-  //el [] se utiliza para que el useEffect solo se ejecute una sola vez cuando en componente tenga un cambio
+  //el []de dependencias  se utiliza para que el useEffect solo se ejecute una sola vez cuando en componente tenga un cambio
   // EN ESTE CASO SOLO SE DISPARA CUANDO SE CARGA EL FORMULARIO
 
   // si necesitaramos ejecutar otra cosa cada que el formulario cambie
@@ -29,7 +29,7 @@ export const SimpleForm = () => {
     console.log("formState Cambio");
   }, [formState]);
 
-  //useeffect pendient de ca,mbios en el email
+  //useEffect pendient de ca,mbios en el email
   useEffect(() => {
     console.log("Email Cambio");
   }, [email]);
@@ -45,6 +45,7 @@ export const SimpleForm = () => {
     //y lo remplaze por le target.name que se le asigna en target.name
     setFormState({
       ...formState,
+      //computo este parametro y se asigno el target.value al target.name  qye referencia an name del input
       [target.name]: target.value,
     });
   };
@@ -53,9 +54,10 @@ export const SimpleForm = () => {
     <>
       <h1>useEffect</h1>
       <hr />
-      {/* //creo un div y un formGrou */}
+      {/* //creo un div y un formGroup */}
       <div className="form-group">
         <input
+        
           type="text"
           name="name"
           className="form-control"

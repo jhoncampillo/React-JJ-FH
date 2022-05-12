@@ -3,7 +3,7 @@
 //no renderiza nada
 import { useState } from "react";
 
-// menso estado inical si no mandan nada va a tomar el valor inicial
+// mando estado inical si no mandan nada va a tomar el valor inicial
 export const useCounter = (initialState = 10) => {
   //creo un estado - le asigno el valor por defecto al estado
   const [state, setState] = useState(initialState);

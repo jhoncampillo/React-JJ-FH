@@ -7,6 +7,8 @@ import { LoginScreen } from "../componens/login/LoginScreen";
 // import { AboutScreen } from "../componens/about/AboutScreen";
 // import { Navbar } from "../componens/ui/Navbar";
 import { DashboardRoutes } from "./DashboardRoutes";
+import { PrivateRoute } from "./PrivateRoute";
+import { PublicRoute } from "./PublicRoute";
 
 export const AppRouter = () => {
   return (
@@ -17,9 +19,23 @@ export const AppRouter = () => {
         <Route path="/dc" element={<DcScreen />} />
         <Route path="/search" element={<SearchScreen />} />
         <Route path="/about" element={<AboutScreen />} /> */}
-        <Route path="/login" element={<LoginScreen />} />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <LoginScreen />
+            </PublicRoute>
+          }
+        />
 
-        <Route path="/*" element={<DashboardRoutes />} />
+        <Route
+          path="/*"
+          element={
+            <PrivateRoute>
+              <DashboardRoutes />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
